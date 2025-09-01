@@ -52,8 +52,7 @@ func invulnerable():
 	$Hurtbox.collision_mask = 0
 	$Hurtbox.monitoring = true
 	print("invulnerable")
-	await get_tree().create_timer(5.0).timeout
+	await get_tree().create_timer(10.0).timeout
 	$Hitbox.collision_layer = originales_hitbox
-	#$Hitbox.monitoring = false
+
 	$Hurtbox.collision_layer = originales_hurtbox
-	#$Hurtbox.monitoring = false

@@ -7,5 +7,6 @@ func _ready() -> void:
 	
 func on_key_collected():
 	door.open()
+	
 func on_diamante_collected():
 	$Player.invulnerable()
